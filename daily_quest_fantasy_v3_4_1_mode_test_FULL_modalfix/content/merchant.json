@@ -1,0 +1,25 @@
+{
+  "buy": [
+    {
+      "id": "potion",
+      "price": 8
+    },
+    {
+      "id": "sword",
+      "price": 40
+    },
+    {
+      "id": "leather_armor",
+      "price": 35
+    },
+    {
+      "id": "oil_lamp",
+      "price": 10
+    },
+    {
+      "id": "fishing_net",
+      "price": 12
+    }
+  ],
+  "sell_multiplier": 0.5
+}

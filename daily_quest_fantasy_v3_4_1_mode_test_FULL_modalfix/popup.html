@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Quest – Fantasy</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="left">
+      <img src="assets/icons/level.png" class="lv-ic" alt="">
+      <span class="lv-text">Niv <b id="levelVal">1</b></span>
+    </div>
+    <div class="title">
+      <h1>Daily Quest – Fantasy</h1>
+      <small id="modeLabel">(Mode test activé)</small>
+    </div>
+    <div class="right"><button id="optionsBtn" class="merchant-btn" title="Options">⚙</button>
+      <div class="gold mini">
+        <img src="assets/icons/po.png" class="po-ic" alt="">
+        <span id="goldVal">0</span>
+      </div>
+      <button id="merchantBtn" title="Marchand" class="merchant-btn">🏪</button>
+    </div>
+  </header>
+<div class="xpbar">
+  <div class="xpbar-fill" id="xpBarFill" style="width:0%"></div>
+  <div class="xpbar-text" id="xpBarText">0 / 100 XP</div>
+</div>
+<div id="pinTip" class="pin-tip hidden">Astuce : cliquez sur l’icône puzzle en haut à droite puis épinglez l’extension pour y accéder facilement.</div>
+
+  <main>
+    <section class="quest">
+      <div class="meta"><span id="ilotName"></span> • <span id="questTitle"></span></div>
+      <p id="stepText" class="text"></p>
+      <div id="choices" class="choices"></div>
+
+      <div id="feedback" class="feedback hidden">
+        <span id="fbIcon">ℹ️</span>
+        <span id="fbText"></span>
+      </div>
+    </section>
+
+    <section class="inventory">
+      <h3>Inventaire</h3>
+      <ul id="inv" class="inv"></ul>
+    </section>
+
+    <section class="recap hidden" id="recapBox">
+      <h3>Récap de la quête</h3>
+      <div id="recapSummary"></div>
+      <button id="newQuestBtn">Lancer une nouvelle quête</button>
+    </section>
+  </main>
+
+  <!-- Merchant Modal -->
+  <div id="merchantModal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Marchand</h3>
+        <div class="merchant-gold"><img src="assets/icons/po.png" class="po-ic" alt=""><span id="merchantGoldVal">0</span> PO</div>
+        <button id="closeMerchant" class="close">✕</button>
+      </div>
+      <div class="tabs">
+        <button class="tab active" data-tab="buy">Acheter</button>
+        <button class="tab" data-tab="sell">Vendre</button>
+      </div>
+      <div class="tab-panel" id="tab-buy"></div>
+      <div class="tab-panel hidden" id="tab-sell"></div>
+    </div>
+  
+  <div id="tutorialModal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" style="width:380px">
+      <div class="modal-header">
+        <h3></h3>
+        <button id="closeTutorial" class="close">✕</button>
+      </div>
+      <div class="tab-panel">
+        <p>• Une quête par jour (en mode normal) — en mode test, vous pouvez en lancer plusieurs.</p>
+        <p>• Gagnez de l’XP et de l’or, achetez/vendez au marchand.</p>
+        <p>• Certains choix mèneront à des combats (nouveau système V3.3).</p>
+        <p>• Vous pouvez régler l’heure du rappel quotidien dans <b>Options</b>.</p>
+        <button id="tutorialGotIt">J’ai compris</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="popup.js"></script>
+  <script src="v33_combat.js"></script>
+</body>
+</html>

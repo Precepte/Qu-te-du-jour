@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Daily Quest – Fantasy (Mode Test) V3.4",
+  "version": "3.4.0",
+  "description": "Quêtes polies (cohérence/objets), combats intégrés et fonctionnels, rappel réglable, tutoriel 1ère ouverture.",
+  "icons": {
+    "32": "assets/icons/chest.png",
+    "64": "assets/icons/chest.png"
+  },
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/icons/*.png",
+        "content/*.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

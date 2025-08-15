@@ -1,0 +1,74 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;margin:0;width:410px;background:#0a0e17;color:#eaf1f7}
+header{display:grid;grid-template-columns:120px 1fr 120px;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid #1c2230;background:#0d1422}
+.left{display:flex;align-items:center;gap:6px}
+.lv-ic{width:18px;height:18px}
+.lv-text{font-size:13px;color:#cfe3ff}
+.title h1{font-size:16px;margin:0;text-align:center}
+.title small{color:#96a1b1;display:block;text-align:center}
+.right{display:flex;justify-content:flex-end;align-items:center;gap:8px}
+.gold.mini{display:flex;align-items:center;gap:6px;background:#0e1526;border:1px solid #24304a;border-radius:8px;padding:4px 8px}
+.po-ic{width:16px;height:16px}
+.merchant-btn{width:32px;height:32px;border-radius:8px;border:1px solid #2a3852;background:#152033;color:#e8eaed;cursor:pointer}
+.merchant-btn:hover{background:#1b2942}
+
+main{padding:12px}
+.quest .meta{color:#9fb0c9;margin-bottom:6px}
+.text{white-space:pre-wrap;margin:8px 0 10px}
+.choices{display:grid;gap:8px}
+button.choice{padding:10px 12px;background:#152033;border:1px solid #2a3852;border-radius:10px;color:#e8eaed;cursor:pointer;transition:.08s ease;box-shadow:0 1px 0 #000}
+button.choice:hover{transform:translateY(-1px);background:#1b2942}
+button.choice[disabled]{opacity:.5;cursor:not-allowed}
+
+.feedback{margin-top:10px;padding:8px 10px;border-radius:10px;border:1px solid #2a3852;background:#101b2e;display:flex;gap:8px;align-items:center}
+.feedback.info{border-color:#2a3852;background:#101b2e}
+.feedback.success{border-color:#1f4d2b;background:#0e1f15}
+.feedback.fail{border-color:#5b1f2a;background:#210f14}
+.hidden{display:none}
+
+.inventory h3{margin:12px 0 6px;font-size:13px;color:#c9d1d9}
+.inv{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;list-style:none;padding:0;margin:0}
+.item{display:flex;flex-direction:column;align-items:center;gap:4px}
+.slot{width:56px;height:56px;border:1px solid #2a3345;border-radius:8px;background:#0e1520;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 #000}
+.slot img{width:36px;height:36px}
+.item label{font-size:11px;color:#d8dee9;text-align:center}
+
+.recap{margin-top:12px;padding:10px;border:1px solid #27324a;background:#101a2a;border-radius:10px;box-shadow:inset 0 1px 0 #000}
+#newQuestBtn{margin-top:8px;padding:8px 10px;border-radius:8px;border:1px solid #2a3345;background:#17243a;color:#e8eaed;cursor:pointer}
+
+.modal.hidden{display:none}
+.modal{position:fixed;inset:0}
+.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.modal-card{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:360px;background:#0d1422;border:1px solid #2a3852;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.modal-header{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid #1e2940}
+.modal-header h3{margin:0}
+.close{background:#152033;border:1px solid #2a3852;border-radius:8px;color:#e8eaed;width:28px;height:28px;cursor:pointer}
+.tabs{display:flex;gap:6px;padding:8px 10px;border-bottom:1px solid #1e2940}
+.tab{padding:6px 10px;border-radius:8px;border:1px solid #2a3852;background:#152033;color:#e8eaed;cursor:pointer}
+.tab.active{background:#1b2942}
+.tab-panel{padding:10px 12px}
+.shop-item{display:flex;justify-content:space-between;align-items:center;gap:8px;border:1px solid #2a3852;border-radius:10px;padding:8px 10px;margin-bottom:8px;background:#0f1830}
+.shop-item .info{display:flex;align-items:center;gap:8px}
+.shop-item img{width:28px;height:28px}
+.shop-item .price{display:flex;align-items:center;gap:6px}
+.shop-item .price img{width:16px;height:16px}
+.shop-item button{padding:6px 8px;border-radius:8px;border:1px solid #2a3852;background:#17243a;color:#e8eaed;cursor:pointer}
+.shop-item button:disabled{opacity:.5;cursor:not-allowed}
+
+/* V3.3 additions */
+.xpbar{position:relative;height:10px;background:#0d1422;border:1px solid #24304a;border-radius:999px;margin:8px 12px}
+.xpbar-fill{height:100%;background:linear-gradient(90deg,#3aa6ff,#6dd5ff);border-radius:999px;transition:width .4s ease}
+.xpbar-text{font-size:11px;color:#a9b7c6;text-align:center;margin-top:4px}
+
+.pin-tip{margin:8px 12px;background:#102038;border:1px dashed #2a3852;color:#cfe3ff;border-radius:8px;padding:8px}
+.hidden{display:none}
+
+.modal-card{position:fixed;max-height:90vh;overflow:auto}
+.modal-header{position:sticky;top:0;background:#0f1830;z-index:2}
+.modal-header .merchant-gold{display:flex;align-items:center;gap:6px;color:#cfe3ff}
+.modal-header .merchant-gold .po-ic{width:16px;height:16px}
+
+
+/* V3.3 — Tutorial modal */
+#tutorialModal .tab-panel p{color:#cfe3ff;margin:6px 0}
+#tutorialModal .tab-panel button{margin-top:8px}

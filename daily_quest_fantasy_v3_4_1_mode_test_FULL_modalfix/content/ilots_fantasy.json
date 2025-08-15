@@ -1,0 +1,904 @@
+{
+  "ilots": [
+    {
+      "id": "valombre",
+      "name": "Valombre",
+      "quests": [
+        {
+          "title": "Le murmure dans les bois",
+          "steps": [
+            {
+              "text": "Marché couvert : l’herboriste soupire, paniers trop lourds.",
+              "choices": [
+                {
+                  "label": "Aider l’herboriste",
+                  "effects": {
+                    "xp": 5,
+                    "gold": 2,
+                    "addItem": "map_torn"
+                  },
+                  "feedback": "Elle te confie une carte déchirée."
+                },
+                {
+                  "label": "Suivre l’encapuchonné",
+                  "effects": {
+                    "xp": 6,
+                    "addItem": "pendant"
+                  },
+                  "feedback": "Tu récupères un pendentif tombé."
+                },
+                {
+                  "label": "Écouter la conteuse",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Un indice murmuré : « Suis les lucioles. »"
+                }
+              ]
+            },
+            {
+              "text": "Lisière : les lucioles dessinent un sentier incertain.",
+              "choices": [
+                {
+                  "label": "Suivre les lueurs",
+                  "effects": {
+                    "xp": 5,
+                    "addItem": "potion"
+                  },
+                  "feedback": "Une petite fiole pendue à une branche."
+                },
+                {
+                  "label": "Déchiffrer la carte",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "requiresItem": "map_torn",
+                  "feedback": "Un passage discret vers l’autel se révèle."
+                },
+                {
+                  "label": "Avancer prudemment",
+                  "effects": {
+                    "xp": 2
+                  },
+                  "feedback": "Tu continues sans te presser."
+                }
+              ]
+            },
+            {
+              "text": "Autel moussu : l’air retient son souffle.",
+              "choices": [
+                {
+                  "label": "Déposer le pendentif",
+                  "effects": {
+                    "xp": 8,
+                    "gold": 8
+                  },
+                  "requiresItem": "pendant",
+                  "consumeRequired": true,
+                  "feedback": "Le vent approuve et une bourse tombe."
+                },
+                {
+                  "label": "Siffler pour détourner l’attention",
+                  "effects": {
+                    "xp": 6
+                  },
+                  "requiresItem": "whistle",
+                  "consumeRequired": true,
+                  "feedback": "Un cri s’évanouit ; la voie se dégage."
+                },
+                {
+                  "label": "Passer sans offrande",
+                  "effects": {
+                    "xp": 3
+                  },
+                  "feedback": "Tu franchis l’autel sans faveur particulière."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "L’ombre du Capitaine",
+          "steps": [
+            {
+              "text": "Taverne du Chasseur : le Capitaine cherche quelqu’un de fiable.",
+              "choices": [
+                {
+                  "label": "Boire avec le Capitaine",
+                  "effects": {
+                    "xp": 5
+                  },
+                  "feedback": "Il te parle d’un contrebandier dans la forêt."
+                },
+                {
+                  "label": "Refuser et sortir",
+                  "effects": {
+                    "xp": 3,
+                    "addItem": "potion"
+                  },
+                  "feedback": "L’herboriste te rattrape avec une potion."
+                },
+                {
+                  "label": "Chasser la rumeur",
+                  "effects": {
+                    "xp": 4,
+                    "addItem": "pendant"
+                  },
+                  "feedback": "On te donne un pendentif porte-bonheur."
+                }
+              ]
+            },
+            {
+              "text": "Lisière : des empreintes se perdent entre fougères et souches.",
+              "choices": [
+                {
+                  "label": "Suivre la piste",
+                  "effects": {
+                    "xp": 6,
+                    "addItem": "map_torn"
+                  },
+                  "feedback": "Tu récupères une carte qu’il a perdue."
+                },
+                {
+                  "label": "Explorer à l’instinct",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Tu trouves un sifflet oublié."
+                },
+                {
+                  "label": "Rebrousser chemin",
+                  "effects": {
+                    "xp": 2,
+                    "addItem": "obsidian_powder"
+                  },
+                  "feedback": "Rien de plus aujourd’hui."
+                }
+              ]
+            },
+            {
+              "text": "Sentier des lueurs : le Capitaine attend une preuve.",
+              "choices": [
+                {
+                  "label": "Remettre un objet au Capitaine",
+                  "effects": {
+                    "xp": 8,
+                    "gold": 6
+                  },
+                  "requiresItem": "pendant",
+                  "consumeRequired": true,
+                  "feedback": "Il sourit et te récompense."
+                },
+                {
+                  "label": "Garder l’objet",
+                  "effects": {
+                    "xp": 5,
+                    "gold": 8,
+                    "addItem": "crystal_shard"
+                  },
+                  "requiresItem": "pendant",
+                  "feedback": "Tu vends le bijou discrètement.",
+                  "combat": {
+                    "name": "Garde",
+                    "hp": 7,
+                    "bonus": 0,
+                    "xp": 10,
+                    "gold": 3
+                  }
+                },
+                {
+                  "label": "Revendre au marché",
+                  "effects": {
+                    "xp": 4,
+                    "gold": 7,
+                    "addItem": "obsidian_powder"
+                  },
+                  "feedback": "Tu encaisses au marché."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Les herbes de la lisière",
+          "steps": [
+            {
+              "text": "Chez l’herboriste : elle cherche une herbe rare.",
+              "choices": [
+                {
+                  "label": "Accepter la mission",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Elle t’indique un recoin précis."
+                },
+                {
+                  "label": "Refuser poliment",
+                  "effects": {
+                    "xp": 2,
+                    "addItem": "pendant"
+                  },
+                  "feedback": "Elle t’offre un pendentif malgré tout."
+                },
+                {
+                  "label": "Négocier l’avance",
+                  "effects": {
+                    "xp": 3,
+                    "addItem": "potion"
+                  },
+                  "feedback": "Une petite potion pour t’aider."
+                }
+              ]
+            },
+            {
+              "text": "Forêt dense : odeurs d’humus et craquements lointains.",
+              "choices": [
+                {
+                  "label": "Chercher l’herbe",
+                  "effects": {
+                    "xp": 6,
+                    "addItem": "herb"
+                  },
+                  "feedback": "Tu la trouves, fragile et brillante."
+                },
+                {
+                  "label": "Tenter une autre piste",
+                  "effects": {
+                    "xp": 4,
+                    "gold": 5
+                  },
+                  "feedback": "Tu revends une petite prise au marché."
+                },
+                {
+                  "label": "Se perdre exprès",
+                  "effects": {
+                    "xp": 3,
+                    "addItem": "map_torn"
+                  },
+                  "feedback": "Un rocher cache une carte."
+                }
+              ]
+            },
+            {
+              "text": "Marché : à qui remettre ta trouvaille ?.",
+              "choices": [
+                {
+                  "label": "Donner à l’herboriste",
+                  "effects": {
+                    "xp": 9,
+                    "gold": 3,
+                    "addItem": "obsidian_powder"
+                  },
+                  "requiresItem": "herb",
+                  "consumeRequired": true,
+                  "feedback": "Elle te remercie chaleureusement."
+                },
+                {
+                  "label": "Offrir à la conteuse",
+                  "effects": {
+                    "xp": 7
+                  },
+                  "requiresItem": "herb",
+                  "consumeRequired": true,
+                  "feedback": "Elle promet une histoire un autre soir."
+                },
+                {
+                  "label": "Garder l’herbe",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "requiresItem": "herb",
+                  "feedback": "Tu la conserves pour plus tard.",
+                  "combat": {
+                    "name": "Garde",
+                    "hp": 9,
+                    "bonus": 1,
+                    "xp": 11,
+                    "gold": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vieux_port",
+      "name": "Vieux Port de Sornh",
+      "quests": [
+        {
+          "title": "Les prises de l’aube",
+          "steps": [
+            {
+              "text": "Marché au poisson : le poissonnier peste contre la marée.",
+              "choices": [
+                {
+                  "label": "Aider à décharger",
+                  "effects": {
+                    "xp": 4,
+                    "addItem": "fishing_net"
+                  },
+                  "feedback": "Il te prête un filet usé."
+                },
+                {
+                  "label": "Acheter un poisson rare",
+                  "effects": {
+                    "xp": 3,
+                    "addItem": "sea_shell"
+                  },
+                  "feedback": "Un coquillage chante contre ta paume."
+                },
+                {
+                  "label": "Observer les transactions",
+                  "effects": {
+                    "xp": 3,
+                    "addItem": "sea_shell"
+                  },
+                  "feedback": "Tu reconnais des contrebandiers."
+                }
+              ]
+            },
+            {
+              "text": "Quais poisseux : les planches luisent d’embruns.",
+              "choices": [
+                {
+                  "label": "Utiliser le filet",
+                  "effects": {
+                    "xp": 5,
+                    "addItem": "oil_lamp"
+                  },
+                  "requiresItem": "fishing_net",
+                  "consumeRequired": true,
+                  "feedback": "Tu repêches de l’huile de lanterne."
+                },
+                {
+                  "label": "Suivre un marin titubant",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Il te mène vers la vieille jetée."
+                },
+                {
+                  "label": "Parler au garde",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Accès prioritaire au phare obtenu.",
+                  "combat": {
+                    "name": "Garde",
+                    "hp": 9,
+                    "bonus": 1,
+                    "xp": 8,
+                    "gold": 2
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Phare du cap Grinçant : la brume se tasse sur l’horizon.",
+              "choices": [
+                {
+                  "label": "Allumer avec l’huile",
+                  "effects": {
+                    "xp": 7,
+                    "gold": 8
+                  },
+                  "requiresItem": "oil_lamp",
+                  "consumeRequired": true,
+                  "feedback": "Le faisceau fend la brume."
+                },
+                {
+                  "label": "Observer au large avec carte",
+                  "effects": {
+                    "xp": 6,
+                    "addItem": "obsidian_powder"
+                  },
+                  "requiresItem": "sea_chart",
+                  "feedback": "Courants notés pour plus tard."
+                },
+                {
+                  "label": "Rester à l’abri",
+                  "effects": {
+                    "xp": 3,
+                    "addItem": "sea_shell"
+                  },
+                  "feedback": "Tu écoutes le vent."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "La barque du capitaine Merik",
+          "steps": [
+            {
+              "text": "Taverne L’Ancre Noire : Merik cherche un mousse.",
+              "choices": [
+                {
+                  "label": "Accepter de sortir en mer",
+                  "effects": {
+                    "xp": 5,
+                    "addItem": "obsidian_powder"
+                  },
+                  "feedback": "Cap sur les hauts-fonds."
+                },
+                {
+                  "label": "Refuser poliment",
+                  "effects": {
+                    "xp": 3,
+                    "addItem": "oil_lamp"
+                  },
+                  "feedback": "Il te laisse un bidon d’huile."
+                },
+                {
+                  "label": "Négocier sec",
+                  "effects": {
+                    "xp": 4,
+                    "gold": 4,
+                    "addItem": "crystal_shard"
+                  },
+                  "feedback": "Tu grappilles quelques pièces."
+                }
+              ]
+            },
+            {
+              "text": "Au large : houle lente et grincements de bois.",
+              "choices": [
+                {
+                  "label": "Étudier les courants",
+                  "effects": {
+                    "xp": 6,
+                    "addItem": "sea_chart"
+                  },
+                  "feedback": "Tu repères une épave sûre."
+                },
+                {
+                  "label": "Lancer le filet",
+                  "effects": {
+                    "xp": 5,
+                    "gold": 6
+                  },
+                  "feedback": "Une prise revendable."
+                },
+                {
+                  "label": "Écouter la mer",
+                  "effects": {
+                    "xp": 4,
+                    "addItem": "sea_shell"
+                  },
+                  "feedback": "Un chant monte du fond."
+                }
+              ]
+            },
+            {
+              "text": "Retour aux quais : cordages qui claquent.",
+              "choices": [
+                {
+                  "label": "Vendre la prise",
+                  "effects": {
+                    "xp": 6,
+                    "gold": 8
+                  },
+                  "feedback": "Bonne affaire conclue."
+                },
+                {
+                  "label": "Offrir au garde",
+                  "effects": {
+                    "xp": 7
+                  },
+                  "feedback": "Il te doit un service.",
+                  "combat": {
+                    "name": "Garde",
+                    "hp": 10,
+                    "bonus": 0,
+                    "xp": 11,
+                    "gold": 4
+                  }
+                },
+                {
+                  "label": "Garder l’objet",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Tu l’ajoutes à ton sac.",
+                  "combat": {
+                    "name": "Garde",
+                    "hp": 10,
+                    "bonus": 2,
+                    "xp": 8,
+                    "gold": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Les lueurs du large",
+          "steps": [
+            {
+              "text": "Phare : marches humides, odeur d’huile et de sel.",
+              "choices": [
+                {
+                  "label": "Monter au sommet",
+                  "effects": {
+                    "xp": 5
+                  },
+                  "feedback": "Un signal t’attire vers la jetée."
+                },
+                {
+                  "label": "Fouiller la base",
+                  "effects": {
+                    "xp": 4,
+                    "addItem": "oil_lamp"
+                  },
+                  "feedback": "Un bidon d’huile oublié."
+                },
+                {
+                  "label": "Parler au gardien",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Vieilles superstitions partagées."
+                }
+              ]
+            },
+            {
+              "text": "Vieille jetée effondrée : silhouettes dans la brume.",
+              "choices": [
+                {
+                  "label": "Filet dans l’écume",
+                  "effects": {
+                    "xp": 5,
+                    "addItem": "sea_chart"
+                  },
+                  "requiresItem": "fishing_net",
+                  "consumeRequired": true,
+                  "feedback": "Tu repêches une carte marine détrempée."
+                },
+                {
+                  "label": "Plonger à mains nues",
+                  "effects": {
+                    "xp": 4,
+                    "gold": 5
+                  },
+                  "feedback": "Quelques pièces au fond."
+                },
+                {
+                  "label": "Observer les lueurs",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Tu notes un rythme étrange."
+                }
+              ]
+            },
+            {
+              "text": "Taverne : verres qui tintent, histoires qui roulent.",
+              "choices": [
+                {
+                  "label": "Raconter la lueur",
+                  "effects": {
+                    "xp": 6
+                  },
+                  "feedback": "On t’écoute, fasciné."
+                },
+                {
+                  "label": "Garder pour toi",
+                  "effects": {
+                    "xp": 4,
+                    "gold": 6
+                  },
+                  "feedback": "Tu paries en silence et gagnes.",
+                  "combat": {
+                    "name": "Garde",
+                    "hp": 9,
+                    "bonus": 1,
+                    "xp": 12,
+                    "gold": 5
+                  }
+                },
+                {
+                  "label": "Exagérer l’histoire",
+                  "effects": {
+                    "xp": 5
+                  },
+                  "feedback": "La rumeur enfle sur les quais."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tour_necropole",
+      "name": "Tour de Verre & Nécropole",
+      "quests": [
+        {
+          "title": "L’ascension interdite",
+          "steps": [
+            {
+              "text": "Place des ruines : le Gardien de verre surveille l’entrée.",
+              "choices": [
+                {
+                  "label": "Parler au Gardien",
+                  "effects": {
+                    "xp": 5,
+                    "addItem": "crypt_key"
+                  },
+                  "feedback": "Il te confie une clé lourde."
+                },
+                {
+                  "label": "Forcer l’entrée",
+                  "effects": {
+                    "xp": 3
+                  },
+                  "feedback": "Le Gardien grince, contrarié."
+                },
+                {
+                  "label": "Offrir une babiole",
+                  "effects": {
+                    "xp": 4,
+                    "gold": -2
+                  },
+                  "feedback": "Tu laisses quelques pièces sur le socle."
+                }
+              ]
+            },
+            {
+              "text": "Escalier de cristal : reflets mouvants et marches traîtresses.",
+              "choices": [
+                {
+                  "label": "Monter prudemment",
+                  "effects": {
+                    "xp": 5,
+                    "addItem": "spectral_lamp"
+                  },
+                  "feedback": "Une lampe s’allume dans ta paume."
+                },
+                {
+                  "label": "Effriter un cristal",
+                  "effects": {
+                    "xp": 4,
+                    "addItem": "obsidian_powder"
+                  },
+                  "feedback": "Tu remplis une petite bourse."
+                },
+                {
+                  "label": "Fixer les gravures",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Tu retiens un symbole utile."
+                }
+              ]
+            },
+            {
+              "text": "Salle du miroir brisé : souffle froid, éclats comme des yeux.",
+              "choices": [
+                {
+                  "label": "Effleurer le miroir",
+                  "effects": {
+                    "xp": 7,
+                    "addItem": "crystal_shard"
+                  },
+                  "feedback": "Un éclat se colle à toi."
+                },
+                {
+                  "label": "Contourner la pièce",
+                  "effects": {
+                    "xp": 3
+                  },
+                  "feedback": "Le silence te suit."
+                },
+                {
+                  "label": "Ramasser un morceau",
+                  "effects": {
+                    "xp": 5,
+                    "gold": 6
+                  },
+                  "feedback": "Tu en tires quelques pièces."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Les échos de la crypte",
+          "steps": [
+            {
+              "text": "Portes de la nécropole : pierre froide.",
+              "choices": [
+                {
+                  "label": "Utiliser la clé de crypte",
+                  "effects": {
+                    "xp": 6
+                  },
+                  "requiresItem": "crypt_key",
+                  "feedback": "La serrure cède, doucement."
+                },
+                {
+                  "label": "Passer en force",
+                  "effects": {
+                    "xp": 4,
+                    "gold": -2
+                  },
+                  "feedback": "Tu t’écorches et perds quelques pièces."
+                },
+                {
+                  "label": "Chercher le fossoyeur",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Il marmonne un indice."
+                }
+              ]
+            },
+            {
+              "text": "Crypte centrale : souffle gelé.",
+              "choices": [
+                {
+                  "label": "Allumer la lampe spectrale",
+                  "effects": {
+                    "xp": 6
+                  },
+                  "requiresItem": "spectral_lamp",
+                  "consumeRequired": true,
+                  "feedback": "Les ombres reculent."
+                },
+                {
+                  "label": "Fouiller les niches",
+                  "effects": {
+                    "xp": 5,
+                    "addItem": "obsidian_powder"
+                  },
+                  "feedback": "Tes doigts noircissent."
+                },
+                {
+                  "label": "Réciter une prière",
+                  "effects": {
+                    "xp": 5
+                  },
+                  "feedback": "Un écho compatissant te répond."
+                }
+              ]
+            },
+            {
+              "text": "Retour sur la place pavée.",
+              "choices": [
+                {
+                  "label": "Vendre à la marchande",
+                  "effects": {
+                    "xp": 6,
+                    "gold": 8
+                  },
+                  "requiresItem": "crystal_shard",
+                  "consumeRequired": true,
+                  "feedback": "Elle paie sans discuter."
+                },
+                {
+                  "label": "Garder l’éclat",
+                  "effects": {
+                    "xp": 5
+                  },
+                  "requiresItem": "crystal_shard",
+                  "feedback": "Tu le caches dans ta besace.",
+                  "combat": {
+                    "name": "Garde",
+                    "hp": 8,
+                    "bonus": 2,
+                    "xp": 12,
+                    "gold": 3
+                  }
+                },
+                {
+                  "label": "Offrir au scribe",
+                  "effects": {
+                    "xp": 6
+                  },
+                  "requiresItem": "crystal_shard",
+                  "consumeRequired": true,
+                  "feedback": "Il te raconte une histoire perdue."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "La lueur prisonnière",
+          "steps": [
+            {
+              "text": "Place : dalles sombres et vitres ébréchées.",
+              "choices": [
+                {
+                  "label": "Acheter de la poudre",
+                  "effects": {
+                    "xp": 4,
+                    "addItem": "obsidian_powder",
+                    "gold": -3
+                  },
+                  "feedback": "Le marchand sourit de travers."
+                },
+                {
+                  "label": "Marchander longuement",
+                  "effects": {
+                    "xp": 4,
+                    "gold": 2
+                  },
+                  "feedback": "Tu grattes quelques pièces."
+                },
+                {
+                  "label": "Distraire et glisser la main",
+                  "effects": {
+                    "xp": 5
+                  },
+                  "feedback": "Tu t’en sors… cette fois."
+                }
+              ]
+            },
+            {
+              "text": "Escalier intérieur : marches luisantes et reflets trompeurs.",
+              "choices": [
+                {
+                  "label": "Saupoudrer la poudre",
+                  "effects": {
+                    "xp": 6
+                  },
+                  "requiresItem": "obsidian_powder",
+                  "consumeRequired": true,
+                  "feedback": "Les engrenages se grippent."
+                },
+                {
+                  "label": "Passer au jugé",
+                  "effects": {
+                    "xp": 3,
+                    "gold": -2,
+                    "addItem": "obsidian_powder"
+                  },
+                  "feedback": "Un choc — quelques pièces s’éparpillent."
+                },
+                {
+                  "label": "Chercher un motif",
+                  "effects": {
+                    "xp": 4
+                  },
+                  "feedback": "Un dessin te guide."
+                }
+              ]
+            },
+            {
+              "text": "Salle du miroir : une lueur prisonnière palpite.",
+              "choices": [
+                {
+                  "label": "Libérer la lumière",
+                  "effects": {
+                    "xp": 8
+                  },
+                  "feedback": "Elle te traverse et disparaît."
+                },
+                {
+                  "label": "Condenser un éclat",
+                  "effects": {
+                    "xp": 7,
+                    "addItem": "crystal_shard"
+                  },
+                  "feedback": "Tu en conserves un fragment."
+                },
+                {
+                  "label": "Tout éteindre",
+                  "effects": {
+                    "xp": 4,
+                    "addItem": "obsidian_powder"
+                  },
+                  "feedback": "Le Gardien t’oubliera… peut-être."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

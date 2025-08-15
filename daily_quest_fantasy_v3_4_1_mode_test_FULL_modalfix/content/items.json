@@ -1,0 +1,77 @@
+{
+  "potion": {
+    "name": "Petite potion",
+    "icon": "assets/icons/potion.png",
+    "consumable": true
+  },
+  "map_torn": {
+    "name": "Carte déchirée",
+    "icon": "assets/icons/map_torn.png",
+    "consumable": false
+  },
+  "pendant": {
+    "name": "Pendentif de noisetier",
+    "icon": "assets/icons/pendant.png",
+    "consumable": false
+  },
+  "whistle": {
+    "name": "Sifflet du guet",
+    "icon": "assets/icons/whistle.png",
+    "consumable": true
+  },
+  "herb": {
+    "name": "Herbe rare",
+    "icon": "assets/icons/herb.png",
+    "consumable": true
+  },
+  "sea_shell": {
+    "name": "Coquillage chantant",
+    "icon": "assets/icons/sea_shell.png",
+    "consumable": false
+  },
+  "oil_lamp": {
+    "name": "Huile de lanterne",
+    "icon": "assets/icons/oil_lamp.png",
+    "consumable": true
+  },
+  "fishing_net": {
+    "name": "Filet usé",
+    "icon": "assets/icons/fishing_net.png",
+    "consumable": true
+  },
+  "sea_chart": {
+    "name": "Carte marine",
+    "icon": "assets/icons/sea_chart.png",
+    "consumable": false
+  },
+  "crystal_shard": {
+    "name": "Éclat de cristal",
+    "icon": "assets/icons/crystal_shard.png",
+    "consumable": false
+  },
+  "spectral_lamp": {
+    "name": "Lampe spectrale",
+    "icon": "assets/icons/spectral_lamp.png",
+    "consumable": true
+  },
+  "crypt_key": {
+    "name": "Clé de crypte",
+    "icon": "assets/icons/crypt_key.png",
+    "consumable": false
+  },
+  "obsidian_powder": {
+    "name": "Poudre d’obsidienne",
+    "icon": "assets/icons/obsidian_powder.png",
+    "consumable": true
+  },
+  "sword": {
+    "name": "Épée simple",
+    "icon": "assets/icons/sword.png",
+    "consumable": false
+  },
+  "leather_armor": {
+    "name": "Armure de cuir",
+    "icon": "assets/icons/leather_armor.png",
+    "consumable": false
+  }
+}

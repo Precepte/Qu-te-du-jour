@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Quest – Options</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;margin:0;padding:24px;background:#0a0e17;color:#eaf1f7}
+    h1{margin:0 0 12px 0;font-size:20px}
+    .card{background:#0f1830;border:1px solid #24304a;border-radius:12px;padding:16px;max-width:560px}
+    label{display:block;margin-bottom:8px;color:#cfe3ff}
+    select,button,input{background:#152033;border:1px solid #2a3852;border-radius:8px;color:#eaf1f7;padding:8px 10px}
+    .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .hint{color:#9fb0c9;font-size:13px;margin-top:8px}
+    .ok{color:#7fffd4;margin-left:8px;display:none}
+  </style>
+</head>
+<body>
+  <h1>Daily Quest – Options</h1>
+  <div class="card">
+    <label for="reminderHour">Heure du rappel quotidien</label>
+    <div class="row">
+      <select id="reminderHour"></select>
+      <button id="save">Enregistrer</button>
+      <span id="saved" class="ok">✔ Sauvegardé</span>
+      <button id="testNotif">Tester le rappel</button>
+    </div>
+    <div class="hint">Le rappel ne s’affiche pas si vous avez déjà joué aujourd’hui.</div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
